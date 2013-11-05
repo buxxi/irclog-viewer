@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>IRC log</title>
+		<link type="text/css" rel="stylesheet" href="css/style.css">		
+		<meta charset="utf-8">		
+		<script type="text/javascript" data-main="js/main" src="js/ext/require.js"></script>
+	</head>
+	<body>
+		<div id="channels">
+			<ul>
+			</ul>
+		</div>
+		<div id="search">
+			<h3>Search</h3>
+			<form>			
+				<div id="chart"><img src="img/ajax-loader.gif"/></div>	
+
+				<div id="search_date">
+					<label>Date:</label><input type="text" id="from_date"/> - <input type="text" id="to_date"/>
+				</div>
+
+				<div id="search_by">
+					<label>User:</label><input type="text" id="user"/>
+				</div>
+
+				<div id="search_text">
+					<label>Text:</label><input type="text" id="text" />
+				</div>
+
+
+				<div id="search_actions">
+					<input type="button" value="Search"/>
+				</div>
+			</form>
+			<h3>Statistics</h3>
+			<div id="stats">Loading, please wait...</div>
+		</div>
+		<div id="log"></div>
+	</body>
+</html>

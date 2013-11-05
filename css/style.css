@@ -1,0 +1,253 @@
+#channels {
+	position : fixed;
+	z-index : 2;
+	left : 0;
+	top : -25px;
+	background-color : #152B33;
+	width : 100%;
+	height : 35px;
+	padding : 0;
+}
+
+#channels:hover {
+	border-bottom : 3px solid #3C6316;
+}
+
+#channels li {
+	display : inline-block;
+	padding : 0.32em;
+}
+
+#channels a {
+	text-decoration : none;
+	color : #A5AEAE;
+}
+
+#channels .active a {
+	font-weight : bold;
+	color : #6DAB14;
+}
+
+#search {
+	background-color : #152B33;
+	position : fixed;
+	z-index : 3;
+	right : -410px;
+	top : 0;
+	padding : 0.7em;
+	height : 100%;
+	width : 400px;
+	margin : 0;
+}
+
+#search:hover {
+	border-left : 3px solid #3C6316;
+}
+
+#search input[type="button"] {
+	background-image: -moz-linear-gradient(bottom, #030D0F 0%, #27353A 100%);
+	background-image: linear-gradient(bottom, #030D0F 0%, #27353A 100%);
+	color : #A5AEAE;
+	border : 1px solid #A5AEAE;
+	border-radius: 10px;
+	padding : 4px;
+	font-weight : bold;
+	font-size : 0.8em;
+	float : right;
+	margin-top : 4px;
+}
+
+#search input[type="button"]:hover {
+	background-image: -moz-linear-gradient(bottom, #59AB14 0%, #3B721D 100%);
+	background-image: linear-gradient(bottom, #59AB14 0%, #3B721D 100%);
+	cursor : pointer;
+}
+
+#search input[type="text"] {
+	background-color : #121B1D;
+	color : #A5AEAE;
+	border : 1px solid #A5AEAE;
+	border-radius: 5px;
+	padding : 4px;
+	display : inline;
+	width : 100px;
+}
+
+#search #chart {
+	width : 100%;
+	height : 200px;
+	background-color : #121B1D;
+	padding : 0;
+	text-align : center;
+}
+
+#search #chart img {
+	margin-top : 75px;
+}
+
+#search div {
+	padding : 3px;
+}
+
+#search label {
+	display : block;
+	font-size : 0.8em;
+	font-weight : bold;
+}
+
+#search_text {
+	clear : both;
+}
+
+#search_text input {
+	width : 100% !important;
+}
+
+#search_date {
+	float : left;
+}
+
+#search_by {
+	float : right;
+}
+
+#search_actions input {
+	margin-left : 5px;
+}
+
+#stats dl {
+	margin : 0;
+}
+
+#stats dt {
+	padding-left : 2em;
+	font-size : 0.9em;
+	color : #6DAB14;
+	float : left;
+	clear : both;
+}
+
+#stats dd {
+	padding-right : 2em;
+	font-size : 0.8em;
+	float : right;
+}
+
+#tooltip {
+	position : absolute;
+	z-index : 3;
+	background-color : #152B33;
+	border : 1px solid #6DAB14;
+	color : white;
+	font-size : 0.8em;
+	padding : 2px;
+}
+
+ul,li,p,h5,body {
+	list-style : none;
+	margin : 0;
+	padding : 0;
+}
+
+ul div, ul p, ul h5 {
+	display : inline-block;
+}
+
+.timestamp {
+	width : 5em;
+	font-size : 0.8em;
+	padding-left : 0.5em;
+}
+
+.user {
+	width : 10em;
+	color : #3C721D;
+}
+
+.operator {
+	color : #6DAB14;
+}
+
+.operator:before {
+	content : "@";
+}
+
+.voiced:before {
+	content : "+";
+}
+
+.group ul {
+	display : none;
+}
+
+.group {
+	background : #121B1D;
+	font-size : 0.8em;
+	padding : 0.7em 16em;
+	color : #7D8484;
+}
+
+.expandedgroup {
+	background : #121B1D;
+}
+
+.expandedgroup .groupsummary {
+	display : none;
+}
+
+.group, .expandedgroup {
+	cursor : pointer;
+}
+
+#log li {
+	border-bottom : 1px solid black;
+}
+
+#log .match {
+	background-color : #152B33;
+}
+
+#log li:hover {
+	border-bottom : 1px dashed #6DAB14;
+}
+
+body {
+	background : #020C0E;
+	color : #A5AEAE;
+	font-family : "Avant Garde";
+	margin-top : 3em;
+}
+
+body {
+	margin-bottom : 100px;
+	margin-top : 100px;
+}
+
+a {
+	color : #6DAB14;
+}
+
+p {
+	font-size : 0.8em;
+}
+
+h3 {
+	margin : 3px;
+}
+
+.me .message {
+	font-style : italic;
+	padding-left : 1em;
+}
+
+.nick,.quit,.join,.part,.topic,.op,.voice,.deop,.devoice,.kick,.ban,.unban,.mode {
+	color : #7D8484;
+}
+
+.nick .message:before,.quit .message:before,.join .message:before,.part .message:before,.topic .message:before,.op .message:before,.voice .message:before,.deop .message:before,.devoice .message:before,.kick .message:before,.ban .message:before,.unban .message:before,.mode .message:before {
+	content : "*** ";
+}
+
+.nick .message:after,.quit .message:after,.join .message:after,.part .message:after,.topic .message:after,.op .message:after,.voice .message:after,.deop .message:after,.devoice .message:after,.kick .message:after,.ban .message:after,.unban .message:after,.mode .message:after {
+	content : " ***";
+}
